@@ -1,0 +1,877 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tracking</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+    font-family: 'Sportypo';
+    src: url("style/fonts/SportypoReguler.woff2") format('woff2'),
+        url("style/fonts/SportypoReguler.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.trk-wrapper {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.content-wd {
+    margin: auto;
+    width: 1200px;
+}
+.trk-wrapper .header {
+    height: 96px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    margin-left: 11px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.nav1 {
+    display: flex;
+    list-style: none;
+}
+.nav1 a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 47px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 18.71px;
+    font-weight: 400;
+    line-height: 49.157px;
+    transform: scale(1.069, 1.069);
+}
+.nav1 a:hover {
+    color: #f2631f;
+}
+.nav1 a:active {
+    color: #f2631f;
+}
+.search {
+    width: 158px;
+    height: 27px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding-left: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+.searchicon {
+    position: absolute;
+    top: 6px;
+    left: 128px
+}
+.sr-icon {
+    margin-right: 43px;
+    position: relative;
+}
+.icons {
+    margin-right: 13px;
+}
+.banner {
+    background-image: url("images/image-slice/Layer_5.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 487px;
+}
+.banner-cnt {
+    position: relative;
+}
+.slider-icon {
+}
+.flexdiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 479px;
+}
+.icon-sp {
+    margin-right: 12px;
+}
+.banner-btn {
+    font-family: 'Myriad Pro';
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    top: 351px;
+    left: 60px;
+    padding: 10px 32px;
+    text-decoration: none;
+}
+.banner-cta {
+    width: 145px;
+    height: 45px;
+    border-radius: 9px;
+    background-color: #ffea00;
+    box-shadow: 0px 7px 11.57px 1.43px rgba(42, 41, 41, 0.38);
+    border: none;
+    position: absolute;
+    top: 357px;
+    left: 26px;
+}
+.banner-cta:hover {
+    background-color: #f2631f;
+    color: #FFFFFF;
+    border-radius: 9px;
+    width: 145px;
+    height: 45px;
+}
+.banner-btn:hover {
+    color: #FFFFFF;
+}
+.biketyp-hd {
+    font-family: 'Noto Sans', sans-serif;
+    color: #f2631f;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 51px
+}
+.biketyp-hd::before {
+    content: "";
+    width: 5px;
+    height: 24px;
+    background-color: #196481;
+    margin-right: 4px;
+    display: inline-block;
+}
+.biketyp-cnt {
+    display: flex;
+    justify-content: space-between;
+}
+.bikes {
+    width: 225px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: #ffea00;
+    text-align: center;
+    padding: 27px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #00000;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.bikes:hover {
+    background-color: #000000;
+    color: #ffea00;
+}
+.bikes:active {
+    background-color: #000000;
+    color: #ffea00;
+}
+.bike-list {
+    list-style: none;
+    position: relative;
+}
+.bikes-cnt {
+    width: 956px;
+    height: 508px;
+    border-radius: 7px;
+    background-color: #000000;
+    box-shadow: 0px 0px 10.66px 2.34px rgba(42, 41, 41, 0.15);
+    position: relative;
+}
+.biketyp {
+    margin-top: 51px;
+}
+.bike-pg {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 43.64px;
+    line-height: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 44px;
+    left: 80px;
+}
+.text-stl {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 23.64px;
+    font-weight: 400;
+}
+.cta-btn {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 11.72px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+.biketyp-cta {
+    width: 200px;
+    height: 49px;
+    border-radius: 22px;
+    background-color: #f2631f;
+    position: absolute;
+    top: 118px;
+    left: 77px;
+    border: none;
+}
+.biketyp-cta:hover {
+    background-color: #EB5209;
+}
+.biketyp-img {
+    position: absolute;
+    top: 21px;
+    left: 211px;
+    z-index: -2;
+}
+.biketyp-hd {
+    font-family: 'Noto Sans', sans-serif;
+    color: #f2631f;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 75px;
+}
+.biketyp-hd::before {
+    content: "";
+    width: 5px;
+    height: 24px;
+    background-color: #196481;
+    margin-right: 4px;
+    display: inline-block;
+}
+.best-hd {
+    font-family: 'Noto Sans', sans-serif;
+    color: #f2631f;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 108px;
+    margin-top: 110px;
+}
+.best-hd::before {
+    content: "";
+    width: 5px;
+    height: 24px;
+    background-color: #196481;
+    margin-right: 4px;
+    display: inline-block;
+}
+.best-card {
+    width: 386px;
+    height: 346px;
+    border-radius: 29px;
+    background-color: #fcfcfa;
+    box-shadow: 0px 4px 17.43px 3.57px rgba(42, 41, 41, 0.13);
+    position: relative;
+}
+.best-products {
+    position: absolute;
+    left: 13px;
+    top: -55px;
+}
+.best-name {
+    font-family: 'Noto Sans', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 33.792px;
+    position: absolute;
+    top: 196px;
+    left: 29px;
+}
+.price {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 18px;
+    color: #f2631f;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 228px;
+    left: 29px;
+}
+.inc-gst {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 18px;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+}
+.best-spec {
+    font-family: 'Noto Sans', sans-serif;
+    color: #000000;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    position: absolute;
+    top: 189px;
+    left: 276px;
+}
+.best-rating {
+    font-family: 'Noto Sans', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    position: absolute;
+    top: 300px;
+    left: 30px
+}
+.best-buy {
+    width: 145px;
+    height: 44px;
+    border-bottom-right-radius: 32px;
+    background-color: #000000;
+    position: absolute;
+    top: 302px;
+    left: 242px;
+    border: none;
+}
+.best-buy:hover {
+    background-color: #ffea00;
+    color: #000000;
+}
+.best-a:hover {
+    color: #000000;
+}
+.best-a {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffea00;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-bottom-right-radius: 32px;
+}
+.best-sold {
+    font-family: 'Noto Sans', sans-serif;
+    color: #f2631f;
+    font-size: 10px;
+    font-weight: 400;
+    position: absolute;
+    top: 286px;
+    left: 243px;
+}
+.best-crds {
+    display: flex;
+}
+.perfect-hd {
+    font-family: 'Noto Sans', sans-serif;
+    color: #f2631f;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 54px;
+    margin-top: 76px;
+}
+.perfect-hd::before {
+    content: "";
+    width: 5px;
+    height: 24px;
+    background-color: #196481;
+    margin-right: 4px;
+    display: inline-block;
+}
+.perfect-btn {
+    width: 222px;
+    height: 53px;
+    border-radius: 22px;
+    background-color: #f2631f;
+    box-shadow: 0px 5px 7.68px 0.32px rgba(42, 41, 41, 0.36);
+    border: none;
+    position: absolute;
+    top: 228px;
+    left: 732px;
+}
+.perfect-btn:hover {
+    background-color: #EB5209;
+}
+.perfect-btn a {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 17px 32px;
+}
+.perfect-img {
+    position: relative;
+}
+.bianchi {
+    width: 100%;
+    height: 534px!important;
+    position: relative;
+    margin-top: 130px;
+    overflow: hidden;
+}
+.bianchi-vid {
+    max-height: 1069px!important;
+    min-width: 100%;
+}
+.bianchi-logo {
+    position: absolute;
+    top: 96px;
+    left: 227px;
+    width: 396px;
+    height: 140px;
+}
+.bianchi-exp {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffea00;
+    font-size: 36px;
+    font-weight: 400;
+    position: absolute;
+    top: 208px;
+    left: 321px;
+    text-decoration: none;
+}
+.category-hd {
+    font-family: 'Noto Sans', sans-serif;
+    color: #f2631f;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 54px;
+    margin-top: 76px;
+}
+.category-hd::before {
+    content: "";
+    width: 5px;
+    height: 24px;
+    background-color: #196481;
+    margin-right: 4px;
+    display: inline-block;
+}
+.category-cards {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.see {
+    position: relative;
+}
+.more {
+    display: block;
+}
+.see::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index: 2;
+    display: block;
+    bottom: 5px;
+    top: 0px;
+}
+.category-btn {
+    position: absolute;
+    top: 171px;
+    left: 105px;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: #21212100;
+    padding: 6px 19px;
+    z-index: 2;
+}
+.category-btn a {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.category-btn:hover {
+    background-color: #08080869;
+}
+.essential {
+    height: 849px;
+    background-color: #efefef;
+    margin-top: 85px;
+}
+.essential-hd {
+    font-family: 'Noto Sans', sans-serif;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 51px;
+    margin-bottom: 47px;
+    column-span: all;
+}
+.essential-cnt {
+    column-count: 2;
+    column-gap: 14px;
+}
+.essential-img {
+    margin-bottom: 14px;
+    display: block;
+}
+.advantage {
+    height: 336px;
+    background-color: #ededed;
+    margin-top: 12px;
+}
+.advantage-hd {
+    color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 81px;
+}
+.tracking {
+    color: #000000;
+    font-family: 'Sportypo';
+    font-size: 25px;
+}
+.tracking-k {
+    color: #000000;
+    font-family: 'Sportypo';
+    font-size: 31px;
+}
+.advantage-round {
+    width: 62px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: #f2631f;
+    box-shadow: 0px 0px 7.28px 0.72px rgba(42, 41, 41, 0.29);
+}
+.advantage-rounds {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.advantage-round {
+    position: relative;
+}
+.advantage-img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.advantage-imgtr {
+    position: absolute;
+    top: 19px;
+    left: 9px;
+}
+.advantage-txt {
+    font-family: 'Noto Sans', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
+	.trk-footer{
+		height: 385px;
+	background-color: #000000;
+	}
+	.footer-li{
+		    display: flex;
+    justify-content: space-around;
+    align-items: center;
+		margin-top: 63px;
+	}
+	.footer-para{
+		font-family: 'Noto Sans', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	}
+	.footer-sub{
+		width: 246px;
+	height: 30px;
+	border-radius: 11px;
+	background-color: #ffffff;
+		font-family: 'Noto Sans', sans-serif;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 33.792px;
+		padding: 14px;
+		border:none;
+		margin-top: 23px;
+	}
+	.footer-link{
+		font-family: 'Noto Sans', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 33.792px;
+		text-decoration: none;
+		list-style: none;
+	}
+	.footer-link:hover{
+		color: #f2631f;
+	}
+	.footer-social{
+		font-family: 'Noto Sans', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 33.792px;
+		margin-top: 20px;
+	}
+	.emial-sub{
+		width: 76px;
+	height: 30px;
+	border-bottom-right-radius: 11px;
+	border-top-right-radius: 11px;
+	background-color: #f2631f;
+		font-family: 'Noto Sans', sans-serif;
+	color: #000000;
+	font-size: 15px;
+	font-weight: 400;
+		position: absolute;
+		top: 23px;
+    left: 170px;
+    border: none;
+	}
+	.footer-div{
+		position: relative;
+	}
+	.social-icon{
+		width: 30px;
+	height: 31px;
+		margin-right: 10px;
+	}
+	.footer-line{
+		margin-top: 65px;
+	}
+	.footer-last{
+		font-family: 'Noto Sans', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 33.792px;
+		text-align: center;
+		    margin-top: 14px;
+	}
+</style>
+</head>
+<body>
+<div class ="trk-wrapper">
+  <div class="header">
+    <div class="content-wd nav">
+      <div class="logo"><a href="#"><img class="logim" src="images/image-slice/Layer_7.png" alt="" width="69" height="69"></a> <a href="#"><img class="name" src="images/image-slice/TRACKING.png" alt="" width="221" height="32"></a> </div>
+      <div class="nav">
+        <ul class="nav1">
+          <a href="#">
+          <li>Home</li>
+          </a> <a href="#">
+          <li>Bike</li>
+          </a> <a href="#">
+          <li>Acessories</li>
+          </a>
+        </ul>
+        <div class="sr-icon">
+          <input class="search" type="search" placeholder="search on tracking">
+          <a class="searchicon" href="#"><img src="images/image-slice/Layer_45.png" alt="" width="16" height="15"></a></div>
+        <div> <a class="icons" href="#"><img src="images/image-slice/Layer_35.png" alt="" width="23" height="23"></a> <a class="icons" href="#"><img src="images/image-slice/Layer_34.png" alt="" width="22" height="19"></a> <a class="icons" href="#"><img src="images/image-slice/Layer_32.png" alt="" width="24" height="20"></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="content-wd banner-cnt">
+      <button class="banner-cta">
+      <a href="#" class="banner-btn">BUYNOW</a>
+      </button>
+      <div class="flexdiv">
+        <div class="slider-icon"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1.png" alt="" width="15" height="13"> <img class="icon-sp"  src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="content-wd biketyp-hd">BIKE TYPES</h2>
+  <div class="content-wd biketyp">
+    <div class="biketyp-cnt">
+      <ul class="bike-list">
+        <img class="biketyp-img" src="images/image-slice/Shape_3.png" alt="" width="32" height="47">
+        <li class="bikes">E-Bikes</li>
+        <li class="bikes">Mountain Bikes</li>
+        <li class="bikes">Hybrid Bikes</li>
+        <li class="bikes">Fat Tire Bikes</li>
+        <li class="bikes">Little champ</li>
+      </ul>
+      <div class="bikes-cnt"> <img style="border-radius: 45px" src="images/desktop-e-bicycle-jumbotron.jpg" alt="" width="955" height="500">
+        <div class="bike-pg">
+          <p>E-Bicycles <br>
+            <span class="text-stl">The Future of Mobility</span></p>
+        </div>
+        <button class="biketyp-cta">
+        <a href="#" class="cta-btn">View E-Bikes</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <h2 class="content-wd best-hd">BEST SELLER</h2>
+  <div class="content-wd best-crds">
+    <div class="content-wd best">
+      <div class="best-card"> <img class="best-products" src="images/image-slice/Layer_201.png" alt="" width="357" height="209">
+        <h3 class="best-name">SNOW LEOPARD 29T</h3>
+        <p class="price">MRP: ₹ 28,299/-<br>
+          <span class="inc-gst">Inclusive of GST</span></p>
+        <div class="best-spec">
+          <p>21 Hi-Speed<br>
+            <b>Shimano Gears</b></p>
+          <p>Fast & Dynamic<br>
+            <b>Disc Brakes</b></p>
+          <p>Lock In/Out<br>
+            <b>Suspension</b></p>
+        </div>
+        <div class="best-rating">
+          <p>Rating</p>
+          <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> </div>
+        <p class="best-sold">Sold 6 units in the last 24 hours!</p>
+        <button class="best-buy">
+        <a class="best-a" href="3"> Buy Now </a>
+        </button>
+      </div>
+    </div>
+    <div class="content-wd best">
+      <div class="best-card"> <img class="best-products" src="images/image-slice/Layer_40.png" alt="" width="356" height="212">
+        <h3 class="best-name">AXXIS 27.5 D</h3>
+        <p class="price">MRP: ₹ 12,960/-<br>
+          <span class="inc-gst">Inclusive of GST</span></p>
+        <div class="best-spec">
+          <p>Fast & Dynamic<br>
+            <b>Disc Brakes</b></p>
+          <p>Lock In/Out<br>
+            <b>Suspension</b></p>
+        </div>
+        <div class="best-rating">
+          <p>Rating</p>
+          <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> </div>
+        <p class="best-sold">Sold 6 units in the last 24 hours!</p>
+        <button class="best-buy">
+        <a class="best-a" href="3"> Buy Now </a>
+        </button>
+      </div>
+    </div>
+    <div class="content-wd best">
+      <div class="best-card"> <img class="best-products" src="images/image-slice/Layer_52.png" alt="" width="349" height="199">
+        <h3 class="best-name">Fusion 26</h3>
+        <p class="price">MRP: ₹ 15,291/-<br>
+          <span class="inc-gst">Inclusive of GST</span></p>
+        <div class="best-spec">
+          <p>21 Hi-Speed<br>
+            <b>Shimano Gears</b></p>
+          <p>Fast & Dynamic<br>
+            <b>Disc Brakes</b></p>
+          <p>Lock In/Out<br>
+            <b>Suspension</b></p>
+        </div>
+        <div class="best-rating">
+          <p>Rating</p>
+          <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"> <img src="images/image-slice/Layer_36.png" alt="" width="17" height="17"></div>
+        <p class="best-sold">Sold 6 units in the last 24 hours!</p>
+        <button class="best-buy">
+        <a class="best-a" href="#"> Buy Now </a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <h2 class="content-wd perfect-hd">Find Your Perfect Bike</h2>
+  <div class="content-wd perfect-img"> <img src="images/image-slice/Layer_16.png" alt="" width="1201" height="347">
+    <button class="perfect-btn">
+    <a href="#">GO TO CYCLE GUIDE</a>
+    </button>
+  </div>
+  <div class="bianchi">
+    <video class="trk-wrapper bianchi-vid" src="video/bianchi-specialissima-video-textedited.mp4" autoplay="autoplay" loop="loop"></video>
+    <img class="content-wd bianchi-logo" src="images/image-slice/Layer_22.png" alt="" width="396" height="140">
+    <h3><a  class="content-wd bianchi-exp" href="#">Explore</a></h3>
+  </div>
+  <h2 class="content-wd category-hd">BIKE CATEGORY</h2>
+  <div class="content-wd category-cards"> <a href="#"><img src="images/image-slice/Layer_13.png" alt="" width="388" height="383"></a> <a href="#"><img src="images/image-slice/Layer_12.png" alt="" width="388" height="383"></a> <a href="#"><img src="images/image-slice/Layer_14.png" alt="" width="388" height="383"></a> <a href="#"><img src="images/image-slice/Layer_10.png" alt="" width="388" height="383"></a> <a href="#"><img src="images/image-slice/Layer_11.png" alt="" width="388" height="383"></a>
+    <div class="see"> <img class="more" src="images/image-slice/Layer_29.png" alt="" width="388" height="383">
+      <button class="category-btn">
+      <a href="#">See More</a>
+      </button>
+    </div>
+  </div>
+  <div class="trk-wrapper essential">
+    <div class="content-wd essential-cnt">
+      <h2 class="essential-hd">ESSENTIAL CYCLING APPAREL</h2>
+      <a class="essential-img" href="#"><img src="images/image-slice/Layer_17.png" alt="" width="590" height="298"></a> <a class="essential-img" href="#"><img src="images/image-slice/Layer_18.png" alt="" width="590" height="298"></a> <a class="essential-img" href="#"><img src="images/image-slice/Layer_19.png" alt="" width="590" height="298"></a> <a class="essential-img"  href="#"><img src="images/image-slice/Layer_21.png" alt="" width="590" height="298"></a> </div>
+  </div>
+  <div class="trk-wrapper advantage">
+    <div class="content-wd advantage-cnt">
+      <h2 class="advantage-hd">THE <span class="tracking">TRAC<span class="tracking-k">K</span>ING</span> ADVANTAGE</h2>
+      <div class="advantage-rounds">
+        <div class="advantage-round"><img class="advantage-imgtr" src="images/image-slice/Layer_26.png" alt="" width="42" height="23"></div>
+        <h3 class="advantage-txt">Free Shipping Available*</h3>
+        <div class="advantage-round"><img img class="advantage-img" src="images/image-slice/Layer_23.png" alt="" width="31" height="33"></div>
+        <h3 class="advantage-txt">Fully Fitted and Ready To<br>
+          Ride Bicycles</h3>
+        <div class="advantage-round"><img img class="advantage-img" src="images/image-slice/Layer_27.png" alt="" width="32" height="32"></div>
+        <h3 class="advantage-txt">Orginal Products with<br>
+          Manufacturer’s warranty</h3>
+        <div class="advantage-round"><img img class="advantage-img" src="images/image-slice/Layer_44.png" alt="" width="32" height="32"></div>
+        <h3 class="advantage-txt">Guaranteed Offers<br>
+          and Deals </h3>
+      </div>
+    </div>
+  </div>
+	<div class="trk-wrapper trk-footer">
+		<div class="content-wd footer-cnt">
+		<div class="footer-li">
+			<ul>
+		<a class="footer-link" href="#"><li>About Us</li></a>		
+		<a class="footer-link" href="#"><li>Shipping policy</li></a>	
+		<a class="footer-link" href="#"><li>Privacy Policy</li></a>	
+		<a class="footer-link" href="#"><li>Tearms and Conditions</li></a>	
+		<a class="footer-link" href="#"><li>Return & Exchange Policy</li></a>
+			</ul>
+			<ul>	
+		<a class="footer-link" href="#"><li>Register My Bike</li></a>	
+		<a class="footer-link" href="#"><li>Track My Order</li></a>	
+		<a class="footer-link" href="#"><li>Find Your Perfect Bike</li></a>	
+		<a class="footer-link" href="#"><li>Frame Size Chart</li></a>	
+		<a class="footer-link" href="#"><li>Customer review</li></a>
+			</ul>
+			<ul>
+		<a class="footer-link" href="#"><li>FAQ</li></a>
+		<a class="footer-link" href="#"><li>Blog</li></a>	
+		<a class="footer-link" href="#"><li>Contact us</li></a>	
+		<a class="footer-link" href="#"><li>Dealer Login</li></a>	
+		<a class="footer-link" href="#"><li>Bike Warranty</li></a>
+			</ul>
+			<div class="footer-cnt-2">
+				<p class="footer-para">
+Register with Tracking to receive latest updates on<br>
+new arrivals, discounts and cycling inspiration.
+</p>
+			<div class="footer-div">
+				<input class="footer-sub" type="email" placeholder="Email-ID">
+				<input class="emial-sub" type="submit" value="SUBMIT">
+				</div>
+			<div class="footer-social"><h3>Follow Us</h3>
+				<a class="social-icon" href="#"><img src="images/image-slice/Instagram.png" alt="" width="32" height="32"></a>
+				<a class="social-icon" href="#"><img src="images/image-slice/Facebook.png" alt="" width="32" height="32"></a>
+				<a class="social-icon" href="#"><img src="images/image-slice/Twitter.png" alt="" width="32" height="32"></a>
+				<a class="social-icon" href="#"><img src="images/image-slice/Layer_46.png" alt="" width="32" height="32"></a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<hr class="footer-line">
+		<h3 class="content-wd footer-last">All Rights Reserved © Tracking.com 2021</h3>
+	</div>
+</div>
+</body>
+</html>
