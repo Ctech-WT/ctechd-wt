@@ -67,6 +67,7 @@ ul .hasdropdown .dropdown {
     background-color: #FFFFFF;
     border: 6px double #662F8E;
     border-radius: 6px;
+	z-index: 1;
 }
 .hasdropdown .dropdown li {
     display: block;
@@ -100,7 +101,7 @@ il .dropdown li a {
     background-image: url("images/shopping-cart.png");
 }
 .icon-3 {
-	background-image: url("images/search-icon.png");
+	background-image: url("images/new-search-icon.png");
 	position: relative;
 }
 
@@ -109,9 +110,7 @@ il .dropdown li a {
     left: 118px;
     top: 250px;
 }
-.banner-image {
-   
-}
+
 .product {
     display: flex;
     align-items: center;
@@ -328,7 +327,7 @@ il .dropdown li a {
 .flexbg {
     display: flex;
     flex-direction: column;
-    width: 58%;
+    width:875px ;
     border-radius: 45px;
     background-color: #fff7f7;
     box-shadow: 0px 0px 26.1px 2.9px rgba(29, 34, 34, 0.11);
@@ -443,7 +442,7 @@ il .dropdown li a {
     font-weight: bold;
 }
 .mm{
-	width:1520px;
+	width:100%;
 	height:670px;
 	background-repeat: no-repeat;
 	background-size: cover;
